@@ -45,3 +45,10 @@ ol {
 p[role="alert"] {
   color: red;
 }
+
+.activity-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
