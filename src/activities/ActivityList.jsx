@@ -4,10 +4,7 @@ export default function ActivityList({ activities }) {
   return (
     <ul>
       {activities.map((activity) => (
-        <ActivityListItem
-          key={activity.id}
-          activity={activity}
-        />
+        <ActivityListItem key={activity.id} activity={activity} />
       ))}
     </ul>
   );
@@ -20,7 +17,7 @@ function ActivityListItem({ activity }) {
     <li>
       <a
         onClick={() => {
-          navigate(`/${activity.id}`);
+          navigate(`/activities/${activity.id}`);
         }}
       >
         {activity.name}
